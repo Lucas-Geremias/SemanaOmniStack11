@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+   background-color: steelblue; 
+   font-family: 'Roboto', sans-serif;
+   font-size: 25px;
+
+}
+.header{
+    background-color: antiquewhite;
+    height: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.div a + a{
+    margin-left: 30px;
+}
+.div  a {
+    text-decoration: none;
+    color: #0759a7;
+    position: relative;
+}
+.div a:hover{
+    color: rgb(12, 31, 31);
+}
+.div a::after{
+    content: '';
+    width: 0 ;
+    height: 2px;
+    background-color: #0759a7;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+.div a:hover::after{
+    width: 100%;
+    transition: width 400ms ease-in-out;
+}
+
